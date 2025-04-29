@@ -1,9 +1,11 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const PORT = 3000;
+const port = 3000;
 
-app.use("/", require("./routes"));
+app.get('/', (req, res) => {
+    res.send('Hello from my route');
+});
 
-app.listen(PORT, () => {
-  console.log(`Test server running on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
 });
