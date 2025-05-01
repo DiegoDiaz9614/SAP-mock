@@ -1,0 +1,18 @@
+### ADD ROLL
+POST http://localhost:3000/rolls
+Content-Type: application/json
+
+{
+    "id": "13",
+    "length": "100 ft",
+    "width": "6 ft",
+    "color": "terra cotta",
+    "mil": "60",
+    "bin": "E3"
+}
+
+### Search rolls by color   URL should look something like GET http://localhost:3000/rolls/search?<desired feature>=<desired feature>
+GET http://localhost:3000/rolls/search?length=100%20ft HTTP/1.1
+
+### Search rolls by id
+GET http://localhost:3000/rolls/search?id=2 HTTP/1.1
