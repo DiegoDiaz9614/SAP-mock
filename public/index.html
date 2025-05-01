@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rolls Management</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Rolls Management</h1>
+        
+        <!-- Adding a New Roll -->
+        <section id="add-roll">
+            <h2>Add New Roll</h2>
+            <form id="addRollForm">
+                <label for="id">Roll ID</label>
+                <input type="text" id="id" name="id" required>
+
+                <label for="length">Length</label>
+                <input type="text" id="length" name="length" required>
+
+                <label for="width">Width</label>
+                <input type="text" id="width" name="width" required>
+
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" required>
+
+                <label for="mil">Mil</label>
+                <input type="text" id="mil" name="mil" required>
+
+                <label for="bin">Bin</label>
+                <input type="text" id="bin" name="bin" required>
+
+                <button type="submit">Add Roll</button>
+            </form>
+        </section>
+        <!--searching rolls-->
+        <section id="search-roll">
+            <h2>Search Rolls</h2>
+            <form id="searchRollForm">
+                <label for="searchId">Roll ID</label>
+                <input type="text" id="searchId" name="id">
+        
+                <label for="searchLength">Length</label>
+                <input type="text" id="searchLength" name="length">
+        
+                <label for="searchWidth">Width</label>
+                <input type="text" id="searchWidth" name="width">
+        
+                <label for="searchColor">Color</label>
+                <input type="text" id="searchColor" name="color">
+        
+                <label for="searchMil">Mil</label>
+                <input type="text" id="searchMil" name="mil">
+        
+                <label for="searchBin">Bin</label>
+                <input type="text" id="searchBin" name="bin">
+        
+                <button type="submit">Search Rolls</button>
+            </form>
+        
+            <div id="searchResults">Results</div>
+        </section>
     
+    <script src="./script.js"></script>
 </body>
 </html>
